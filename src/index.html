@@ -1,0 +1,371 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- navbar section -->
+  <nav id="nav" class="bg-transparent fixed right-0 left-0 top-0  py-3 text-white z-20 rounded-b-sm">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <div class="logo">
+        <h1 class="capitalize font-bold text-3xl">Logo</h1>
+      </div>
+      <div class=" hidden lg:flex items-center space-x-4 text-sm lg:text-base">
+        <a href="#" class="btn btn-link text-white">Home</a>
+        <a href="#about-us" class="btn btn-link text-white">About Us</a>
+        <a href="#service" class="btn btn-link text-white">Service</a>
+        <a href="#team" class="btn btn-link text-white">Team</a>
+        <a href="#contact" class="btn btn-link text-white">Contact</a>
+        <a href="#" class="btn btn-link text-white flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg> <span class="ml-2">(229) 555-0109</span>
+        </a>
+      </div>
+      <button class="lg:hidden btn btn-link text-white" id="navBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-current" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+        </>
+    </div>
+  </nav>
+  <div class="z-30 fixed bg-white hidden flex-col inset-y-0 right-0 items-center gap-4 text-gray-800 p-4 pt-8"
+    id="mobileNav">
+    <span onclick="closeNav()" class="absolute left-4 top-4 cursor-pointer" title="Close Nav"><svg
+        xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg></span>
+    <a href="#" class="btn btn-link text-current">Home</a>
+    <a href="#about-us" class="btn btn-link text-current">About Us</a>
+    <a href="#service" class="btn btn-link text-current">Service</a>
+    <a href="#team" class="btn btn-link text-current">Team</a>
+    <a href="#contact" class="btn btn-link text-current">Contact</a>
+    <a href="#" class="btn btn-link text-current flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+      </svg> <span class="ml-2">(229) 555-0109</span>
+    </a>
+  </div>
+  <!-- hero section -->
+  <header class="h-screen relative">
+    <img src="./images/hero.jpg" alt="3 women looking at a laptop" loading="lazy"
+      class="absolute h-full w-full object-cover" />
+    <div class="inset-0 bg-black opacity-60 absolute  ">
+    </div>
+
+    <div class="relative w-full h-full z-10 flex items-center justify-center">
+
+      <div class="container max-w-prose relative text-center text-white">
+        <h1 class="text-3xl md:text-5xl font-bold mb-6">Get a perfect look today</h1>
+        <p class="opacity-90 mb-12">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+          officia consequat duis enim velit
+          mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <a href="" class="btn">Let's get in touch</a>
+      </div>
+    </div>
+    <div class="absolute bottom-5 inset-x-0 flex items-center justify-center">
+      <span class="text-white flex">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 animate-bounce" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+        <span class="ml-2">Scroll to explore</span>
+      </span>
+    </div>
+  </header>
+  <!-- Main section -->
+  <main class="container mx-auto px-6">
+    <!-- Abous us  section-->
+    <section class="my-28 scroll-mt-28" id="about-us">
+      <div class="flex flex-col items-center md:flex-row md:justify-around pb-16 gap-6">
+        <div class="max-w-prose  mb-16 self-center text-center md:text-left">
+          <h2 class="text-gray-900 font-medium text-3xl mb-6">Welcome to Our barbershop</h2>
+          <p class="text-gray-700 mb-6">Donec rutrum congue leo eget malesuada. Cras ultricies li gula sed magna dictum
+            porta.
+            Vestibulum ac diam sit amet quam
+            vehicula elementum sed sit amet dui.</p>
+
+          <button class="btn">Learn More</button>
+        </div>
+        <div class="relative max-w-sm">
+
+          <img src="./images/abou-us.jpg" alt="" class="w-full object-cover rounded">
+          <div class="mt-6 md:mt-0 md:absolute bg-gray-100 p-5 rounded -left-2/4 -bottom-16 shadow-md">
+            <div
+              class="mb-4 md:mt-0 md:absolute -top-6 -left-5 rounded h-10 w-10 bg-green-600 shadow-md shadow-green-600/10 flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="mb-4">Opening Hours</h4>
+              <ul class="list-none space-y-4">
+                <li>Mondays - Fridays: 9am - 7pm</li>
+                <li>Saturdays: 10am - 6pm</li>
+                <li>Sundays: Closed</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section-->
+    <section class="my-28 scroll-mt-28" id="contact">
+      <div class="flex flex-col items-center md:flex-row md:justify-around  gap-6">
+        <div class="order-2 md:order-none relative max-w-sm justify-self-center pr-2">
+          <img src="./images/barber-01.jpg" alt="" class="w-full object-cover rounded">
+        </div>
+        <div class="order-1 sm:order-none max-w-prose mb-16 self-center text-center">
+          <h2 class="text-gray-900 font-medium text-3xl mb-6">Get in touch with us</h2>
+          <p class="text-gray-700 mb-6">Donec rutrum congue leo eget malesuada. Cras ultricies li gula sed magna dictum
+            porta. Vestibulum ac diam sit amet quam
+            vehicula elementum sed sit amet dui.</p>
+          <div class="grid sm:grid-cols-2 gap-10 pt-4">
+            <div class="relative bg-gray-100 p-5 rounded shadow-md">
+              <div
+                class="absolute -top-6 -left-5 rounded h-10 w-10 bg-green-600 shadow-md shadow-green-600/10 flex items-center justify-center text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="mb-4">Opening Hours</h4>
+                <p>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
+              </div>
+            </div>
+            <div class="relative bg-gray-100 p-5 rounded shadow-md">
+              <div
+                class="absolute -top-6 -left-5 rounded h-10 w-10 bg-green-600 shadow-md shadow-green-600/10 flex items-center justify-center text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="mb-4">(229) 555-0109</h4>
+                <p>Open every day, but closed at sunday</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service section -->
+    <section class="my-28 scroll-mt-28" id="service">
+      <div class="flex flex-col items-center">
+        <div class="max-w-prose text-center mb-16">
+          <h2 class="text-3xl font-medium mb-6">We cut hair, not corners</h2>
+          <p class="text-gray-700">Donec rutrum congue leo eget malesuada. Cras ultricies li gula sed magna dictum
+            porta. Vestibulum ac diam sit amet quam
+            vehicula elementum sed sit amet dui.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-4 pt-4">
+          <div class="bg-gray-100 p-5 rounded shadow-md">
+            <div class="flex items-center justify-between mb-4 gap-4">
+              <div class="flex items-center gap-4">
+                <div
+                  class="rounded h-8 w-8 bg-green-600 shadow-md shadow-green-600/10 flex items-center justify-center text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
+                  </svg>
+                </div>
+                <h4 class="text-lg font-medium">Beard and Mustache trim</h4>
+              </div>
+              <span class="text-lg font-medium">15€</span>
+            </div>
+            <p>Donec rutrum congue leo eget malesuada. Cras ultricies li gula sed magna dictum porta.</p>
+          </div>
+          <div class="bg-gray-100 p-5 rounded shadow-md">
+            <div class="flex items-center justify-between mb-4 gap-4">
+              <div class="flex items-center gap-4">
+                <div
+                  class="rounded h-8 w-8 bg-green-600 shadow-md shadow-green-600/10 flex items-center justify-center text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
+                  </svg>
+                </div>
+                <h4 class="text-lg font-medium">Hair Cut & Styling</h4>
+              </div>
+              <span class="text-lg font-medium">15€</span>
+            </div>
+            <p>Donec rutrum congue leo eget malesuada. Cras ultricies li gula sed magna dictum porta.</p>
+          </div>
+          <div class="bg-gray-100 p-5 rounded shadow-md">
+            <div class="flex items-center justify-between mb-4 gap-4">
+              <div class="flex items-center gap-4">
+                <div
+                  class="rounded h-8 w-8 bg-green-600 shadow-md shadow-green-600/10 flex items-center justify-center text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
+                  </svg>
+                </div>
+                <h4 class="text-lg font-medium">Coloring Services</h4>
+              </div>
+              <span class="text-lg font-medium">15€</span>
+            </div>
+            <p>Donec rutrum congue leo eget malesuada. Cras ultricies li gula sed magna dictum porta.</p>
+          </div>
+          <div class="bg-gray-100 p-5 rounded shadow-md">
+            <div class="flex items-center justify-between mb-4 gap-4">
+              <div class="flex items-center gap-4">
+                <div
+                  class="rounded h-8 w-8 bg-green-600 shadow-md shadow-green-600/10 flex items-center justify-center text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
+                  </svg>
+                </div>
+                <h4 class="text-lg font-medium">Royal Shave</h4>
+              </div>
+              <span class="text-lg font-medium">15€</span>
+            </div>
+            <p>Donec rutrum congue leo eget malesuada. Cras ultricies li gula sed magna dictum porta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- team section -->
+    <section class="my-28 scroll-mt-28" id="team">
+      <div class="mx-auto max-w-prose text-center mb-16">
+        <h2 class="text-3xl font-medium mb-6">Meet The Family</h2>
+        <p class="text-gray-700">Donec rutrum congue leo eget malesuada. Cras ultricies li gula sed magna dictum
+          porta. Vestibulum ac diam sit amet quam
+          vehicula elementum sed sit amet dui.</p>
+      </div>
+      <div class="flex items-center justify-center">
+        <div class="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div class="w-full max-w-xs text-center">
+            <img class="object-cover object-center w-full h-48 rounded-lg"
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+              alt="avatar" />
+
+            <div class="mt-2">
+              <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Brooklyn Simmons</h3>
+              <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">Master Barber</span>
+            </div>
+          </div>
+          <div class="w-full max-w-xs text-center">
+            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./images/barber-02.jpg"
+              alt="avatar" />
+
+            <div class="mt-2">
+              <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Whitney Hettinger</h3>
+              <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">Master Barber</span>
+            </div>
+          </div>
+          <div class="w-full max-w-xs text-center">
+            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./images/barber-03.jpg"
+              alt="avatar" />
+
+            <div class="mt-2">
+              <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Torrance Langworth</h3>
+              <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">Master Barber</span>
+            </div>
+          </div>
+          <div class="w-full max-w-xs text-center">
+            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg"
+              src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+              alt="avatar" />
+
+            <div class="mt-2">
+              <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Blair Dooley</h3>
+              <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">Master Barber</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="flex justify-center px-4 bg-gray-800 text-white dark:text-white dark:bg-gray-800">
+    <div class="container py-6 mx-auto">
+      <h1 class="text-lg font-bold text-center lg:text-2xl uppercase  ">
+        Logo
+      </h1>
+
+      <div class="flex justify-center mt-6 text-center">
+        <p>Donec rutrum congue leo eget malesuada. Cras ultricies li gula sed magna dictum porta.</p>
+      </div>
+
+      <hr class="h-px mt-6 border-gray-300 border-none dark:bg-gray-700">
+
+      <div class="flex flex-col items-center justify-center mt-6">
+        <div class="flex">
+          <div class="-mx-4">
+            <a href="#about-us" class="px-4 text-sm font-medium text-white hover:underline">About
+              Us</a>
+            <a href="#service" class="px-4 text-sm font-medium text-white hover:underline">Service</a>
+            <a href="#team" class="px-4 text-sm font-medium text-white hover:underline">Team</a>
+            <a href="#contact" class="px-4 text-sm font-medium text-white hover:underline">Contact</a>
+          </div>
+        </div>
+        <div class="mt-4">
+          <p class="text-center text-white dark:text-white">2020 - All right reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("nav").classList.add("bg-white", 'text-gray-800', 'shadow-md');
+        let btn = document.getElementsByClassName("btn-link")
+        for (let i = 0; i < btn.length; i++) {
+          btn[i].classList.add("text-gray-800")
+        }
+      } else {
+        document.getElementById("nav").classList.remove("bg-white", 'text-gray-800', 'shadow-md');
+        let btn = document.getElementsByClassName("btn-link")
+        for (let i = 0; i < btn.length; i++) {
+          btn[i].classList.remove("text-gray-800")
+        }
+      }
+    }
+
+    // mobileNav
+    let mobileNav = document.getElementById("mobileNav")
+    let navBtn = document.getElementById("navBtn")
+    let links = document.querySelectorAll('#mobileNav a')
+    console.log(links)
+
+    links.forEach((link) => {
+      link.addEventListener("click", closeNav)
+    })
+    navBtn.addEventListener('click', () => {
+      if (mobileNav.classList.contains("flex")) {
+        closeNav()
+      } else {
+        mobileNav.classList.remove("hidden")
+        mobileNav.classList.add("flex")
+      }
+    })
+
+    function closeNav() {
+      mobileNav.classList.remove("flex")
+      mobileNav.classList.add("hidden")
+    }
+
+  </script>
+</body>
+
+</html>
